@@ -14,7 +14,7 @@ namespace Primer_Parcial.Negocio
         {
             double total = vent.Precio_del_Producto * vent.Cantidad_del_Producto;
 
-            if (vent.Precio_del_Producto> 50)
+            if (vent.Precio_del_Producto > 50)
             {
                 double descuento = total - (total * 0.20);
                 Console.WriteLine("Usted esta aplicando al 20 % de descuento de descuento, por lo cual su total es de:  " + descuento);

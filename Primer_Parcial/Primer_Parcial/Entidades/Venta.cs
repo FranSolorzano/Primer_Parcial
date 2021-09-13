@@ -13,6 +13,7 @@ namespace Primer_Parcial.Entidades
         private String descripcion_del_Producto;
         private double precio_del_Producto;
         private int cantidad_del_Producto;
+       
 
 
         public double Identificador_de_Producto { get => identificador_de_Producto; set => identificador_de_Producto = value; }
@@ -20,6 +21,7 @@ namespace Primer_Parcial.Entidades
         public string Descripcion_del_Producto { get => descripcion_del_Producto; set => descripcion_del_Producto = value; }
         public double Precio_del_Producto { get => precio_del_Producto; set => precio_del_Producto = value; }
         public int Cantidad_del_Producto { get => cantidad_del_Producto; set => cantidad_del_Producto = value; }
+       
 
         public Venta()
         {
@@ -33,6 +35,9 @@ namespace Primer_Parcial.Entidades
             this.Precio_del_Producto = precio_del_Producto;
             this.Cantidad_del_Producto = cantidad_del_Producto;
         }
+
+     
+        
 
         public override string ToString()
         {
