@@ -8,14 +8,14 @@ namespace Primer_Parcial.Entidades
 {
     class Venta
     {
-        private String identificaodor_de_Producto;
+        private double identificador_de_Producto;
         private String nombre_del_Producto;
         private String descripcion_del_Producto;
         private double precio_del_Producto;
         private int cantidad_del_Producto;
 
 
-        public string Identificaodor_de_Producto { get => identificaodor_de_Producto; set => identificaodor_de_Producto = value; }
+        public double Identificador_de_Producto { get => identificador_de_Producto; set => identificador_de_Producto = value; }
         public string Nombre_del_Producto { get => nombre_del_Producto; set => nombre_del_Producto = value; }
         public string Descripcion_del_Producto { get => descripcion_del_Producto; set => descripcion_del_Producto = value; }
         public double Precio_del_Producto { get => precio_del_Producto; set => precio_del_Producto = value; }
@@ -25,6 +25,23 @@ namespace Primer_Parcial.Entidades
         {
         }
 
-        
+        public Venta(double identificaodor_de_Producto, string nombre_del_Producto, string descripcion_del_Producto, double precio_del_Producto, int cantidad_del_Producto)
+        {
+            this.Identificador_de_Producto = identificaodor_de_Producto;
+            this.Nombre_del_Producto = nombre_del_Producto;
+            this.Descripcion_del_Producto = descripcion_del_Producto;
+            this.Precio_del_Producto = precio_del_Producto;
+            this.Cantidad_del_Producto = cantidad_del_Producto;
+        }
+
+        public override string ToString()
+        {
+            return "el id de su producto es " + identificador_de_Producto +
+                "\n el nombre de su producto es " + nombre_del_Producto +
+                "\n la descripcion de su producto es" + descripcion_del_Producto +
+                "\n el precio del prudcto es" + precio_del_Producto +
+                "\n la cantidad de producto es " + cantidad_del_Producto;
+        }
+   
     }
 }

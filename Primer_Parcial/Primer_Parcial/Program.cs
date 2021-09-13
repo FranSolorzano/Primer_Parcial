@@ -29,9 +29,37 @@ namespace Primer_Parcial
 
             Venta venta = new Venta();
 
-            Console.ReadLine();
+            if (clsUsuario.y == 1)
+            {
+                int x = 1;
+                while (x == 1)
+                {
+                    Console.WriteLine("Por favor ingresar el id que tiene el producto");
+                    double identificador_de_Producto = Convert.ToDouble(Console.ReadLine());
 
-           
+                    Console.WriteLine("Ingresar el nombre del producto a llevar");
+                    string nombre_del_Producto = Convert.ToString(Console.ReadLine());
+
+                    Console.WriteLine("Ingrese la descripcion que contiene el producto");
+                    string descripcion_del_Producto = Convert.ToString(Console.ReadLine());
+
+                    Console.WriteLine("Ingresar el precio que tiene el producto");
+                    double precio_del_Producto = Convert.ToDouble(Console.ReadLine());
+
+                    Console.WriteLine("Ingresar el numero de cantidad de producto a llevar");
+                    int cantidad_del_Producto = Convert.ToInt32(Console.ReadLine());
+
+                    ClsVenta clsventa = new ClsVenta();
+
+                    Venta vent = new Venta(identificador_de_Producto, nombre_del_Producto, descripcion_del_Producto, precio_del_Producto, cantidad_del_Producto);
+                    Console.WriteLine(clsventa.Cobro(vent));
+
+                    Console.ReadLine();
+
+                }
+            }
+
+
 
 
         }

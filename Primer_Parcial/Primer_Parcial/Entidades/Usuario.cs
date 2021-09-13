@@ -10,9 +10,12 @@ namespace Primer_Parcial.Entidades
     {
         private String nombre;
         private int contra;
+        private int y = 1;
+
 
         public string Nombre { get => nombre; set => nombre = value; }
         public int Contra { get => contra; set => contra = value; }
+        public int Y { get => y; set => y = value; }
 
         public Usuario()
         {
@@ -23,5 +26,11 @@ namespace Primer_Parcial.Entidades
             this.Nombre = nombre;
             this.Contra = contra;
         }
+
+        public Usuario(int y)
+        {
+            this.y = y;
+        }
+    
     }
 }
