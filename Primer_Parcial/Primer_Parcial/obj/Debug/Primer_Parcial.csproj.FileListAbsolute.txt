@@ -1,0 +1,7 @@
+C:\Users\HP-Notebook\Documents\GitHub\Primer_Parcial\Primer_Parcial\Primer_Parcial\bin\Debug\Primer_Parcial.exe.config
+C:\Users\HP-Notebook\Documents\GitHub\Primer_Parcial\Primer_Parcial\Primer_Parcial\bin\Debug\Primer_Parcial.exe
+C:\Users\HP-Notebook\Documents\GitHub\Primer_Parcial\Primer_Parcial\Primer_Parcial\bin\Debug\Primer_Parcial.pdb
+C:\Users\HP-Notebook\Documents\GitHub\Primer_Parcial\Primer_Parcial\Primer_Parcial\obj\Debug\Primer_Parcial.csproj.AssemblyReference.cache
+C:\Users\HP-Notebook\Documents\GitHub\Primer_Parcial\Primer_Parcial\Primer_Parcial\obj\Debug\Primer_Parcial.csproj.CoreCompileInputs.cache
+C:\Users\HP-Notebook\Documents\GitHub\Primer_Parcial\Primer_Parcial\Primer_Parcial\obj\Debug\Primer_Parcial.exe
+C:\Users\HP-Notebook\Documents\GitHub\Primer_Parcial\Primer_Parcial\Primer_Parcial\obj\Debug\Primer_Parcial.pdb
