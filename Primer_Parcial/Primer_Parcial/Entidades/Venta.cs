@@ -13,6 +13,8 @@ namespace Primer_Parcial.Entidades
         private String descripcion_del_Producto;
         private double precio_del_Producto;
         private int cantidad_del_Producto;
+        private double descuento;
+        private double total;
        
 
 
@@ -21,7 +23,8 @@ namespace Primer_Parcial.Entidades
         public string Descripcion_del_Producto { get => descripcion_del_Producto; set => descripcion_del_Producto = value; }
         public double Precio_del_Producto { get => precio_del_Producto; set => precio_del_Producto = value; }
         public int Cantidad_del_Producto { get => cantidad_del_Producto; set => cantidad_del_Producto = value; }
-       
+        public double Total { get => total; set => total = value; }
+        public double Descuento { get => descuento; set => descuento = value; }
 
         public Venta()
         {
@@ -34,19 +37,26 @@ namespace Primer_Parcial.Entidades
             this.Descripcion_del_Producto = descripcion_del_Producto;
             this.Precio_del_Producto = precio_del_Producto;
             this.Cantidad_del_Producto = cantidad_del_Producto;
+            
         }
 
-     
-        
+        public Venta(double descuento, double total)
+        {
+            this.Descuento = descuento;
+            this.total = total;
+        }
 
         public override string ToString()
         {
-            return "el id de su producto es " + Identificador_de_Producto +
-                "\n el nombre de su producto es " + Nombre_del_Producto +
-                "\n la descripcion de su producto es" + Descripcion_del_Producto +
-                "\n el precio del pruducto es" + Precio_del_Producto +
-                "\n la cantidad de producto es " + Cantidad_del_Producto;
+            return "El id de su producto es: " + Identificador_de_Producto +
+                "\n El nombre de su producto es: " + Nombre_del_Producto +
+                "\n La descripcion de su producto es: " + Descripcion_del_Producto +
+                "\n El precio del producto es: " + Precio_del_Producto +
+                "\n La cantidad de producto es: " + Cantidad_del_Producto;
         }
-   
+
     }
 }
+   
+    
+

@@ -49,18 +49,13 @@ namespace Primer_Parcial
                     Console.WriteLine("Ingresar el numero de cantidad de producto a llevar: ");
                     int cantidad_del_Producto = Convert.ToInt32(Console.ReadLine());
 
+                    
+
+                    Venta venta = new Venta(identificador_de_Producto, nombre_del_Producto, descripcion_del_Producto, precio_del_Producto, cantidad_del_Producto);
                     ClsVenta clsventa = new ClsVenta();
+                    Console.WriteLine(clsventa.Cobro(venta));
 
-                    Venta vent = new Venta(identificador_de_Producto, nombre_del_Producto, descripcion_del_Producto, precio_del_Producto, cantidad_del_Producto);
-                    Console.WriteLine(clsventa.Cobro(vent));
-
-                    ClsVenta cls = new ClsVenta();
-
-                    Venta venta = new Venta();
-
-                    Console.WriteLine(cls.Cobro(vent));
-
-                    Console.WriteLine(usuario.ToString());
+                    
                     Console.WriteLine(venta.ToString());
                     Console.ReadLine();
 

@@ -10,21 +10,20 @@ namespace Primer_Parcial.Negocio
 {
     class ClsVenta
     {
-        public string Cobro(Venta vent)
-        {
-            double total = vent.Precio_del_Producto * vent.Cantidad_del_Producto;
+        public string Cobro(Venta cobro)
 
-            if (vent.Precio_del_Producto > 50)
+        {
+            cobro.Total  = (cobro.Precio_del_Producto * cobro.Cantidad_del_Producto);
+
+            if (cobro.Total > 50)
             {
-                double descuento = total - (total * 0.20);
-                Console.WriteLine("Usted esta aplicando al 20 % de descuento de descuento, por lo cual su total es de:  " + descuento);
+                cobro.Descuento = cobro.Total - (cobro.Total * 0.50);
+                return("Usted esta aplicando al 20 % de descuento, por lo cual su total es de:  " + cobro.Descuento);
             }
             else
             {
-                Console.WriteLine("Usted no esta aplicando al descuento, por lo tanto su total es de: " + total);
+                return ("Usted no esta aplicando al descuento, por lo tanto su total es de: " + cobro.Total);
             }
-
-            return "";
         }
     }
 }
