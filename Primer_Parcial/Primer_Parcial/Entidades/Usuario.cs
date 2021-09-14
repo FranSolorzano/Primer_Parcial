@@ -26,7 +26,11 @@ namespace Primer_Parcial.Entidades
             this.Contra = contra;
         }
 
-        
-    
+        public override String ToString()
+        {
+            return "su nombre de usuario es: " + Nombre + " su clave es: " + Contra;
+        }
+
+
     }
 }

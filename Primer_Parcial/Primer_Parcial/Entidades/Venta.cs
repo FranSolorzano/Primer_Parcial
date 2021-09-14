@@ -41,11 +41,11 @@ namespace Primer_Parcial.Entidades
 
         public override string ToString()
         {
-            return "el id de su producto es " + identificador_de_Producto +
-                "\n el nombre de su producto es " + nombre_del_Producto +
-                "\n la descripcion de su producto es" + descripcion_del_Producto +
-                "\n el precio del prudcto es" + precio_del_Producto +
-                "\n la cantidad de producto es " + cantidad_del_Producto;
+            return "el id de su producto es " + Identificador_de_Producto +
+                "\n el nombre de su producto es " + Nombre_del_Producto +
+                "\n la descripcion de su producto es" + Descripcion_del_Producto +
+                "\n el precio del pruducto es" + Precio_del_Producto +
+                "\n la cantidad de producto es " + Cantidad_del_Producto;
         }
    
     }

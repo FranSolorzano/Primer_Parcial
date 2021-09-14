@@ -10,11 +10,11 @@ namespace Primer_Parcial.Negocio
 {
     class ClsUsuario
     {
-        string usuario = "Ronald";
+        string usuario = "Franklin";
         Double contraseña = 123;
         public int y = 1;
 
-        Usuario Cons = new Usuario();
+       
 
 
         public string Acceso(Usuario Cons)
